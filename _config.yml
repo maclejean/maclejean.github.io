@@ -85,16 +85,17 @@ menu:
   home: /
   archives: /archives
 
+
 # Favicon
 favicon: /favicon.ico
 
 # Avatar (put the image into next/source/images/)
 # can be any image format supported by web browsers (JPEG,PNG,GIF,SVG,..)
-avatar: /default_avatar.png
+avatar: /avatar.jpg
 
 # Code highlight theme
 # available: normal | night | night eighties | night blue | night bright
-highlight_theme: normal
+highlight_theme: night
 
 # Fancybox for image gallery
 fancybox: true
