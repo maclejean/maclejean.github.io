@@ -11,7 +11,7 @@ before_install:
     - export TZ='Asia/Shanghai' # 更改时区
 
 install:
-  - npm install  #安装hexo及插件
+  - npm install hexo #安装hexo及插件
 
 script:
   - hexo clean  #清除
@@ -33,6 +33,7 @@ after_script:
 branches:
   only:
     - hexo_config  #只监测hexo_config分支，master是我的分支的名称
+
 env:
  global:
    - GH_REF: github.com/maclejean/maclejean.github.io.git  #设置GH_REF
