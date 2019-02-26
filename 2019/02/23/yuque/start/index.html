@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
     
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+  <link href="/lib/pace/pace-theme-bounce.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="FE, NexT，blog，github">
 
 
 
@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="Lite Code House">
 <meta property="og:description" content="最近终于把博客写起来了，本来准备随便找个类似于CDSN之类的博客网站，写一下流水账之类的，后来看到了githubpages这个产品，很对胃口。然后就一步步地搭建静态博客，用到了hexo，yuque，travis之类的开源技术，真的是感谢互联网，感谢开源，我要汲取，也要奉献。  一千个读者就有一千个哈姆雷特  虽说我们一直在使用别人的工具，所碰到的问题也千篇一律，但若找到极其类似的场景，也能更快地解">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-26T12:10:09.644Z">
+<meta property="og:updated_time" content="2019-02-26T13:32:54.767Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客记">
 <meta name="twitter:description" content="最近终于把博客写起来了，本来准备随便找个类似于CDSN之类的博客网站，写一下流水账之类的，后来看到了githubpages这个产品，很对胃口。然后就一步步地搭建静态博客，用到了hexo，yuque，travis之类的开源技术，真的是感谢互联网，感谢开源，我要汲取，也要奉献。  一千个读者就有一千个哈姆雷特  虽说我们一直在使用别人的工具，所碰到的问题也千篇一律，但若找到极其类似的场景，也能更快地解">
@@ -105,9 +105,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -347,7 +347,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2019/02/23/yuque/start/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/23/yuque/start/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/23/yuque/start/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -438,14 +438,7 @@
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
     </div>
-
   
 
 
@@ -517,6 +510,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -546,7 +546,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -563,11 +563,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -593,18 +588,15 @@
   
 
 
+
+
+
+
+
+
+
+
   
-
-
-
-  
-  
-
-
-
-
-
-
 
 
 
@@ -640,17 +632,7 @@
 
   
   
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/three/three.min.js"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+    <script id="ribbon" type="text/javascript" size="300" alpha="0.6" zindex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   
 
 
@@ -665,6 +647,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
@@ -684,26 +673,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://maclejean.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'https://maclejean.github.io/2019/02/23/yuque/start/';
-          this.page.identifier = '2019/02/23/yuque/start/';
-          this.page.title = '博客记';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://maclejean.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -716,6 +685,10 @@
   
 
 
+
+
+
+  
 
 
 
@@ -881,6 +854,21 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   
