@@ -75,7 +75,7 @@ footer:
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page, added in main hexo config.
 # subtitle: Subtitle
@@ -111,7 +111,7 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Pisces
+scheme: Mist
 #scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
@@ -156,7 +156,6 @@ links_layout: block
 # in site  directory(source/uploads): /uploads/avatar.gif
 avatar: /images/avatar.jpg
 use_motion: true
-canvas_nest: true
 # Table Of Contents in the Sidebar
 toc:
   enable: true
@@ -696,10 +695,10 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
-three_waves: false
+three_waves: true
 
 # canvas_lines
 canvas_lines: false
@@ -775,14 +774,10 @@ vendors:
 
   # Internal version: 1.0.0
   # https://github.com/hustcc/canvas-nest.js
-  canvas_nest:
 
   # three
   three:
 
-  # three_waves
-  # https://github.com/jjandxa/three_waves
-  three_waves:
 
   # three_waves
   # https://github.com/jjandxa/canvas_lines
