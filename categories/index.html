@@ -14,6 +14,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -79,18 +86,18 @@
 
 
 
-<meta name="description" content="最近终于把博客写起来了，本来准备随便找个类似于CDSN之类的博客网站，写一下流水账之类的，后来看到了githubpages这个产品，很对胃口。然后就一步步地搭建静态博客，用到了hexo，yuque，travis之类的开源技术，真的是感谢互联网，感谢开源，我要汲取，也要奉献。  一千个读者就有一千个哈姆雷特  虽说我们一直在使用别人的工具，所碰到的问题也千篇一律，但若找到极其类似的场景，也能更快地解">
+<meta name="description" content="享受分享，乐于分享">
 <meta name="keywords" content="Code,FE,HTML,CSS,JS">
-<meta property="og:type" content="article">
-<meta property="og:title" content="博客记--序章">
-<meta property="og:url" content="https://maclejean.github.io/2019/02/23/yuque/blog/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="分类">
+<meta property="og:url" content="https://maclejean.github.io/categories/index.html">
 <meta property="og:site_name" content="Lite Code House">
-<meta property="og:description" content="最近终于把博客写起来了，本来准备随便找个类似于CDSN之类的博客网站，写一下流水账之类的，后来看到了githubpages这个产品，很对胃口。然后就一步步地搭建静态博客，用到了hexo，yuque，travis之类的开源技术，真的是感谢互联网，感谢开源，我要汲取，也要奉献。  一千个读者就有一千个哈姆雷特  虽说我们一直在使用别人的工具，所碰到的问题也千篇一律，但若找到极其类似的场景，也能更快地解">
+<meta property="og:description" content="享受分享，乐于分享">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-26T03:25:49.361Z">
+<meta property="og:updated_time" content="2019-02-26T11:40:29.254Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客记--序章">
-<meta name="twitter:description" content="最近终于把博客写起来了，本来准备随便找个类似于CDSN之类的博客网站，写一下流水账之类的，后来看到了githubpages这个产品，很对胃口。然后就一步步地搭建静态博客，用到了hexo，yuque，travis之类的开源技术，真的是感谢互联网，感谢开源，我要汲取，也要奉献。  一千个读者就有一千个哈姆雷特  虽说我们一直在使用别人的工具，所碰到的问题也千篇一律，但若找到极其类似的场景，也能更快地解">
+<meta name="twitter:title" content="分类">
+<meta name="twitter:description" content="享受分享，乐于分享">
 
 
 
@@ -109,24 +116,24 @@
       author: '博主'
     },
     algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
+      applicationID: '8LG7FFAIYO',
+      apiKey: '61cd4ccfc99cbc5b0a3ad16e44b532bf',
+      indexName: 'counter',
       hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+      labels: {"input_placeholder":"搜索文章","hits_empty":"我们没有找到任何搜索结果: ${query}","hits_stats":"找到约${hits}条结果（用时${time}ms）"}
     }
   };
 </script>
 
 
 
-  <link rel="canonical" href="https://maclejean.github.io/2019/02/23/yuque/blog/">
+  <link rel="canonical" href="https://maclejean.github.io/categories/">
 
 
 
 
 
-  <title>博客记--序章 | Lite Code House</title>
+  <title>分类 | Lite Code House</title>
   
 
 
@@ -191,6 +198,26 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -202,9 +229,47 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -221,126 +286,40 @@
 
   <div id="posts" class="posts-expand">
     
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://maclejean.github.io/2019/02/23/yuque/blog/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Macle Jean">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lite Code House">
-    </span>
-
     
+    
+    <div class="post-block page">
       <header class="post-header">
 
-        
-        
-          <h2 class="post-title" itemprop="name headline">博客记--序章</h2>
-        
+	<h2 class="post-title" itemprop="name headline">分类</h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <div class="category-all-page">
+            <div class="category-all-title">
+                暂无分类
+            </div>
+            <div class="category-all">
               
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T22:54:07+08:00">
-                2019-02-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+            </div>
+          </div>
+        
+      </div>
       
       
-
-      
-        <p>最近终于把博客写起来了，本来准备随便找个类似于CDSN之类的博客网站，写一下流水账之类的，后来看到了githubpages这个产品，很对胃口。然后就一步步地搭建静态博客，用到了hexo，yuque，travis之类的开源技术，真的是感谢互联网，感谢开源，我要汲取，也要奉献。</p>
-<blockquote>
-<p>一千个读者就有一千个哈姆雷特</p>
-</blockquote>
-<p>虽说我们一直在使用别人的工具，所碰到的问题也千篇一律，但若找到极其类似的场景，也能更快地解决问题。<br>今天就到这，瞎写测试一下，yuque-&gt;hexo-&gt;travis-&gt;githubpage 这个流程通不通。<br>下一篇就写一下这整个搭建过程吧。</p>
-
       
     </div>
     
     
     
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
@@ -349,10 +328,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -588,6 +563,14 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://maclejean.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
 
 
 
@@ -603,26 +586,142 @@
 
 
 
-  
 
 
 
 
-
-
-
-
-
-
-
-
-  
 
 
 
 
 
   
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("G5i7Av4HFhRqdYH1qJrNlSTm-gzGzoHsz", "XjOtCcT4de1UNABhwo3h1WqL");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
