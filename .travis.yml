@@ -12,10 +12,13 @@ before_install:
 
 install:
   - npm install hexo #安装hexo及插件
+  - npm install hexo-algolia #安装algolia
+ 
 
 script:
   - hexo clean  #清除
   - hexo g  #生成
+  - hexo algolia #生成搜索的索引 
 
 after_script:
   - git clone https://${GH_REF} .deploy_git  # GH_REF是最下面配置的仓库地址
