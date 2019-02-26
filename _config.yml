@@ -100,5 +100,10 @@ highlight_theme: night
 # Fancybox for image gallery
 fancybox: true
 
+algolia:
+  applicationID: '8LG7FFAIYO'
+  apiKey: '61cd4ccfc99cbc5b0a3ad16e44b532bf'
+  indexName: 'counter'
+  chunkSize: 5000
 # Specify the date when the site was setup
 since: 2019
