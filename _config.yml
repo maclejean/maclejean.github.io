@@ -95,7 +95,7 @@ avatar: /images/avatar.jpg
 
 # Code highlight theme
 # available: normal | night | night eighties | night blue | night bright
-highlight_theme: night
+highlight_theme: night eighties
 
 # Fancybox for image gallery
 fancybox: true
