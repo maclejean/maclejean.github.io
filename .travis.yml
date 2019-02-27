@@ -18,7 +18,7 @@ install:
 script:
   - hexo clean  #清除
   - hexo g  #生成
-  - set HEXO_ALGOLIA_INDEXING_KEY=61cd4ccfc99cbc5b0a3ad16e44b532bf
+  - export HEXO_ALGOLIA_INDEXING_KEY=61cd4ccfc99cbc5b0a3ad16e44b532bf
   - hexo algolia #生成搜索的索引 
 
 after_script:
