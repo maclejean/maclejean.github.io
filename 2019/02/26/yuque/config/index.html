@@ -94,12 +94,12 @@
 <meta property="og:site_name" content="Lite Code House">
 <meta property="og:description" content="相关工具 node （安装） ruby （安装） hexo （node package） github （githubpages 配置） hexo-deployer-git（node package）准备工作1.安装node2.安装ruby3.安装hexo命令行工具  1npm install -g hexo-cli 4.githubpage配置“User or organization sit">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/273716/1551274000249-20d4c46d-9084-4a10-aa59-c43835840ca9.png#align=left&display=inline&height=423&linkTarget=_blank&name=image.png&originHeight=423&originWidth=952&size=55903&status=done&width=952">
-<meta property="og:updated_time" content="2019-02-27T14:01:49.930Z">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/273716/1551274000249-20d4c46d-9084-4a10-aa59-c43835840ca9.png#align=left&display=inline&height=423&name=image.png&originHeight=423&originWidth=952&size=55903&status=done&width=952">
+<meta property="og:updated_time" content="2019-03-02T16:39:34.285Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建属于我的静态博客">
 <meta name="twitter:description" content="相关工具 node （安装） ruby （安装） hexo （node package） github （githubpages 配置） hexo-deployer-git（node package）准备工作1.安装node2.安装ruby3.安装hexo命令行工具  1npm install -g hexo-cli 4.githubpage配置“User or organization sit">
-<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/273716/1551274000249-20d4c46d-9084-4a10-aa59-c43835840ca9.png#align=left&display=inline&height=423&linkTarget=_blank&name=image.png&originHeight=423&originWidth=952&size=55903&status=done&width=952">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/273716/1551274000249-20d4c46d-9084-4a10-aa59-c43835840ca9.png#align=left&display=inline&height=423&name=image.png&originHeight=423&originWidth=952&size=55903&status=done&width=952">
 
 
 
@@ -397,11 +397,21 @@
 <li>hexo-deployer-git（node package）<br><a name="88210852"></a><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2>1.安装<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">node</a><br>2.安装<a href="https://rubyinstaller.org/" target="_blank" rel="noopener">ruby</a><br>3.安装<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a>命令行工具</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>4.<a href="https://pages.github.com/" target="_blank" rel="noopener">githubpage</a>配置<br><br><img src="https://cdn.nlark.com/yuque/0/2019/png/273716/1551274000249-20d4c46d-9084-4a10-aa59-c43835840ca9.png#align=left&amp;display=inline&amp;height=423&amp;linkTarget=_blank&amp;name=image.png&amp;originHeight=423&amp;originWidth=952&amp;size=55903&amp;status=done&amp;width=952" alt="image.png"><br>“User or organization site”是生成username.github.io的域名静态博客（推荐这一种，逼格更高）<br>“Project site”是生成github.io/projectname的静态博客<br>其他的配置就参照githubpage的教程，就两三步。</p>
+<p>4.<a href="https://pages.github.com/" target="_blank" rel="noopener">githubpage</a>配置<br><br><img src="https://cdn.nlark.com/yuque/0/2019/png/273716/1551274000249-20d4c46d-9084-4a10-aa59-c43835840ca9.png#align=left&amp;display=inline&amp;height=423&amp;name=image.png&amp;originHeight=423&amp;originWidth=952&amp;size=55903&amp;status=done&amp;width=952" alt="image.png"><br>“User or organization site”是生成username.github.io的域名静态博客（推荐这一种，逼格更高）<br>“Project site”是生成github.io/projectname的静态博客<br>其他的配置就参照githubpage的教程，就两三步。</p>
 <p>5.安装hexo-deployer-git 博客推送到github的工具</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p><a name="f8054f64"></a></p>
-<h2 id="生成博客"><a href="#生成博客" class="headerlink" title="生成博客"></a>生成博客</h2>
+<p><a name="61771f08"></a></p>
+<h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p>新建一个网站。如果没有设置 <code>folder</code> ，Hexo 默认在目前的文件夹建立网站。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<p>新建一篇文章。如果没有设置 <code>layout</code> 的话，默认使用 <a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">_config.yml</a> 中的 <code>default_layout</code> 参数代替。如果标        题包含空格的话，请使用引号括起来。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<p>生成静态文件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>启动服务器。默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。<br>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。<br><br><br><strong>以上仅列出我经常用到的一些命令，更多命令及配置请移步</strong><a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener"><strong>hexo中文文档</strong></a><strong>。</strong></p>
+
       
     </div>
     
@@ -552,7 +562,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#相关工具"><span class="nav-number">1.</span> <span class="nav-text">相关工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成博客"><span class="nav-number">3.</span> <span class="nav-text">生成博客</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#相关工具"><span class="nav-number">1.</span> <span class="nav-text">相关工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo常用命令"><span class="nav-number">3.</span> <span class="nav-text">hexo常用命令</span></a></li></ol></div>
             
 
           </div>
@@ -755,7 +765,7 @@
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
+    var guest = 'nick,mail';
     guest = guest.split(',').filter(item=>{
       return GUEST.indexOf(item)>-1;
     });
