@@ -95,7 +95,7 @@
 <meta property="og:description" content="相关工具 node （安装） ruby （安装） hexo （node package） github （githubpages 配置） hexo-deployer-git（node package）准备工作1.安装node2.安装ruby3.安装hexo命令行工具  1npm install -g hexo-cli 4.githubpage配置“User or organization sit">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/273716/1551274000249-20d4c46d-9084-4a10-aa59-c43835840ca9.png#align=left&display=inline&height=423&name=image.png&originHeight=423&originWidth=952&size=55903&status=done&width=952">
-<meta property="og:updated_time" content="2019-03-02T16:39:34.285Z">
+<meta property="og:updated_time" content="2019-03-03T08:59:36.460Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建属于我的静态博客">
 <meta name="twitter:description" content="相关工具 node （安装） ruby （安装） hexo （node package） github （githubpages 配置） hexo-deployer-git（node package）准备工作1.安装node2.安装ruby3.安装hexo命令行工具  1npm install -g hexo-cli 4.githubpage配置“User or organization sit">
@@ -400,6 +400,8 @@
 <p>4.<a href="https://pages.github.com/" target="_blank" rel="noopener">githubpage</a>配置<br><br><img src="https://cdn.nlark.com/yuque/0/2019/png/273716/1551274000249-20d4c46d-9084-4a10-aa59-c43835840ca9.png#align=left&amp;display=inline&amp;height=423&amp;name=image.png&amp;originHeight=423&amp;originWidth=952&amp;size=55903&amp;status=done&amp;width=952" alt="image.png"><br>“User or organization site”是生成username.github.io的域名静态博客（推荐这一种，逼格更高）<br>“Project site”是生成github.io/projectname的静态博客<br>其他的配置就参照githubpage的教程，就两三步。</p>
 <p>5.安装hexo-deployer-git 博客推送到github的工具</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>6.配置静态博客仓库地址<br>找到hexo项目配置文件_config.yml，找到deploy属性，没有则新增，注意不能出现重复属性。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span> </span><br><span class="line"><span class="attr">    type:</span> <span class="string">git</span> </span><br><span class="line"><span class="attr">    repository:</span> <span class="attr">https://github.com/$&#123;username&#125;/$&#123;username&#125;.github.io.git</span>  <span class="string">//</span> <span class="string">username为github用户名，</span></span><br><span class="line"><span class="attr">    branch:</span> <span class="string">master</span> <span class="string">//默认master，也可以自己指定</span></span><br></pre></td></tr></table></figure>
 <p><a name="61771f08"></a></p>
 <h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 <p>新建一个网站。如果没有设置 <code>folder</code> ，Hexo 默认在目前的文件夹建立网站。</p>
@@ -410,7 +412,9 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 <p>启动服务器。默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-<p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。<br>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。<br><br><br><strong>以上仅列出我经常用到的一些命令，更多命令及配置请移步</strong><a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener"><strong>hexo中文文档</strong></a><strong>。</strong></p>
+<p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。<br>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>部署网站（简而言之，就是把生成的网页，推送到你设置的github仓库地址）<br><strong>以上仅列出我经常用到的一些命令，更多命令及配置请移步</strong><a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener"><strong>hexo中文文档</strong></a><strong>。</strong><br>下篇，mark一下语雀+hexo的协作，毕竟markdown，不如所见即所得的富文本编辑器好用，而且分类管理起来，语雀确实要方便些。</p>
 
       
     </div>
