@@ -29,6 +29,15 @@ npm install -g hexo-cli
  npm install hexo-deployer-git --save
 ```
 
+6.配置静态博客仓库地址<br />找到hexo项目配置文件_config.yml，找到deploy属性，没有则新增，注意不能出现重复属性。
+
+```yaml
+deploy: 
+    type: git 
+    repository: https://github.com/${username}/${username}.github.io.git  // username为github用户名，
+    branch: master //默认master，也可以自己指定
+```
+
 <a name="61771f08"></a>
 ## hexo常用命令
 
@@ -55,7 +64,11 @@ hexo server
 ```bash
 hexo clean
 ```
-清除缓存文件 (`db.json`) 和已生成的静态文件 (`public`)。<br />在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。<br />
-<br />**以上仅列出我经常用到的一些命令，更多命令及配置请移步**[**hexo中文文档**](https://hexo.io/zh-cn/docs/commands)**。**
+清除缓存文件 (`db.json`) 和已生成的静态文件 (`public`)。<br />在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。
+
+```bash
+hexo deploy
+```
+部署网站（简而言之，就是把生成的网页，推送到你设置的github仓库地址）<br />**以上仅列出我经常用到的一些命令，更多命令及配置请移步**[**hexo中文文档**](https://hexo.io/zh-cn/docs/commands)**。**<br />下篇，mark一下语雀+hexo的协作，毕竟markdown，不如所见即所得的富文本编辑器好用，而且分类管理起来，语雀确实要方便些。
 
 
