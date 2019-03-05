@@ -3699,12 +3699,6 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE<br />
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 **[⬆ 返回目录](#table-of-contents)**
-
-<a name="db54b28d"></a>
-## [修正案]()
-
-我们鼓励您使用此指南并更改规则以适应您的团队的风格指南。下面，你可以列出一些对风格指南的修正。这允许您定期更新您的样式指南，而不必处理合并冲突。
-
-<a name="2145c1b6"></a>
-# };
+<a name="d41d8cd9"></a>
+## 
 
