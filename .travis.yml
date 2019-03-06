@@ -41,7 +41,6 @@ branches:
 env:
  global:
    - GH_REF: github.com/maclejean/maclejean.github.io.git  #设置GH_REF
-   - secure: MjjlRDKg9Uc8CD3vgfTacOhFMbg0G2ocDQ7oWkYNtE4uA3qPS0JOunM4VuxWG6lZRjYzh4riyjGo1m51OB1RMqrB5nj8HWmQcRL2zZHR7D9Jf5ld0aY/iqfRK8/LS2X5XovAQGApJYQWzxF2DzCl1J72K1SbUkqA8y+/N1TgqefgLb27Y43KC2nRjjijIR4RFfhKN+4OZbdzTBfkpo370sp1oq7KqER5iT8qrrT/pGWcUvi6BbxAb6y9L9/+s+9Sl5A5C9J5bNt4H4oA/q3wwaKtp6OZpvDk5aAfLXbamqvQDP3V/6ZJ3Y27+spEVUBhOenw3z+oPxScdfQx5tK/Cv1Q1rwKz5c61W/fLO5qoWgU/5UNLa3Jn8a7XP5GzCu+zcn5g5maVTY2v7H1iyD7HvriJUIcRnw2+6SW4hocq6mzsvRruPwgLELYR+gD08+P//aSOzYPv16FxEpO1m4IVTAgSZluiPeBT158LYEg8/apEJoUV/JgqxjTeOxQlzgFCHC8nOSm7KB9oEhkib3apTlwbTF367RWiHZmiyz/0hznupRfuKQpEbvfT0M3Uq/UI6Zc1Y1Wu2YJw1m09xH3OFQ3aejAmaWf4BK5ouSGQ7yqBcQtE+clfOZQa8d+ojz4vhFqzdWLkHlFFx/mHjqzT0GJ5Iq0xrP+eKFeM7uO0ZE=
 
 # configure notifications (email, IRC, campfire etc)
 # please update this section to your needs!
