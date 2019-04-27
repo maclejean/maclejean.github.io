@@ -7,11 +7,11 @@ categories:
 ---
 <a name="3f38a0ec"></a>
 ## 相关工具
-* node （安装）
-* ruby （安装）
-* hexo （node package）
-* github （githubpages 配置）
-* hexo-deployer-git（node package）
+- node （安装）
+- ruby （安装）
+- hexo （node package）
+- github （githubpages 配置）
+- hexo-deployer-git（node package）
 <a name="88210852"></a>
 ## 准备工作
 1.安装[node](https://nodejs.org/zh-cn/)<br />2.安装[ruby](https://rubyinstaller.org/)<br />3.安装[hexo](https://hexo.io/zh-cn/)命令行工具

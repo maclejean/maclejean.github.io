@@ -8,16 +8,19 @@ categories:
 
 <a name="88210852"></a>
 ## 准备工作
-* [https://travis-ci.org/](https://travis-ci.org/)，用github注册，然后选择一个git项目
-* 准备Github Personal Access Token。
-* [ruby for windows](https://rubyinstaller.org/downloads/)
-* gem install travis
+
+- [https://travis-ci.org/](https://travis-ci.org/)，用github注册，然后选择一个git项目
+- 准备Github Personal Access Token。
+- [ruby for windows](https://rubyinstaller.org/downloads/)
+- gem install travis
 <a name="7af603bb"></a>
 ## 开始配置
+
 1. github生成私钥
 
 ![微信图片_20190306201812.png](https://cdn.nlark.com/yuque/0/2019/png/273716/1551874707042-9156b10c-7ce8-45e3-ae9b-e0ca99041c8d.png#align=left&display=inline&height=250&name=%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190306201812.png&originHeight=380&originWidth=1063&size=29426&status=done&width=699)
-1. 加密上面的私钥到travis
+
+2. 加密上面的私钥到travis
 
 项目根目录内打开命令，运行下面的命令<br />
 
@@ -30,7 +33,7 @@ secure：一串很长的字符串...... //下面会用到
 ```
 将生成的字符串复制，配置到travis-ci.org<br />![微信图片_20190306205038.png](https://cdn.nlark.com/yuque/0/2019/png/273716/1551876657962-8a298ca5-18ac-486e-a9d0-6bf105f0676c.png#align=left&display=inline&height=258&name=%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190306205038.png&originHeight=541&originWidth=1566&size=33251&status=done&width=746)
 
-1. `.travis.yml`其他配置
+4. `.travis.yml`其他配置
 
 下面是我的文件配置，直接拷贝修改即可
 
