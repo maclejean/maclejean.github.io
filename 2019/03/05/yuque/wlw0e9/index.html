@@ -96,7 +96,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/273716/1551874707042-9156b10c-7ce8-45e3-ae9b-e0ca99041c8d.png#align=left&display=inline&height=250&name=%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190306201812.png&originHeight=380&originWidth=1063&size=29426&status=done&width=699">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/273716/1551876657962-8a298ca5-18ac-486e-a9d0-6bf105f0676c.png#align=left&display=inline&height=258&name=%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190306205038.png&originHeight=541&originWidth=1566&size=33251&status=done&width=746">
-<meta property="og:updated_time" content="2019-03-22T13:24:56.464Z">
+<meta property="og:updated_time" content="2019-04-27T07:20:32.495Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="travis-ci加持">
 <meta name="twitter:description" content="准备工作 https://travis-ci.org/，用github注册，然后选择一个git项目 准备Github Personal Access Token。 ruby for windows gem install travis开始配置   github生成私钥    加密上面的私钥到travis  项目根目录内打开命令，运行下面的命令 1travis encrypt KEY=value">
@@ -400,7 +400,7 @@
 <li>github生成私钥</li>
 </ol>
 <p><img src="https://cdn.nlark.com/yuque/0/2019/png/273716/1551874707042-9156b10c-7ce8-45e3-ae9b-e0ca99041c8d.png#align=left&amp;display=inline&amp;height=250&amp;name=%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190306201812.png&amp;originHeight=380&amp;originWidth=1063&amp;size=29426&amp;status=done&amp;width=699" alt="微信图片_20190306201812.png"></p>
-<ol>
+<ol start="2">
 <li>加密上面的私钥到travis</li>
 </ol>
 <p>项目根目录内打开命令，运行下面的命令<br></p>
@@ -408,7 +408,7 @@
 <pre><code>会输出下列信息
 </code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">secure：一串很长的字符串...... //下面会用到</span><br></pre></td></tr></table></figure>
 <p>将生成的字符串复制，配置到travis-ci.org<br><img src="https://cdn.nlark.com/yuque/0/2019/png/273716/1551876657962-8a298ca5-18ac-486e-a9d0-6bf105f0676c.png#align=left&amp;display=inline&amp;height=258&amp;name=%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190306205038.png&amp;originHeight=541&amp;originWidth=1566&amp;size=33251&amp;status=done&amp;width=746" alt="微信图片_20190306205038.png"></p>
-<ol>
+<ol start="4">
 <li><code>.travis.yml</code>其他配置</li>
 </ol>
 <p>下面是我的文件配置，直接拷贝修改即可</p>
@@ -532,7 +532,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
