@@ -101,9 +101,9 @@ highlight_theme: night eighties
 fancybox: true
 
 algolia:
-  applicationID: '8LG7FFAIYO'
-  apiKey: '61cd4ccfc99cbc5b0a3ad16e44b532bf'
-  indexName: 'counter'
+  applicationID: 'KAIE1V1QFG'
+  apiKey: '9f43d221e341eb8dc807637af8435c31'
+  indexName: 'search'
   chunkSize: 5000
 # Specify the date when the site was setup
 since: 2019
