@@ -16,8 +16,8 @@
       "items_count": 8,
       "likes_count": 0,
       "watches_count": 1,
-      "content_updated_at": "2019-04-27T07:14:12.280Z",
-      "updated_at": "2019-04-27T07:14:12.000Z",
+      "content_updated_at": "2019-05-06T12:52:42.868Z",
+      "updated_at": "2019-05-06T12:52:42.000Z",
       "created_at": "2019-02-23T14:05:16.000Z",
       "namespace": "maclejean/lch",
       "user": {
@@ -35,7 +35,7 @@
         "followers_count": 2,
         "following_count": 0,
         "created_at": "2019-02-23T08:29:39.000Z",
-        "updated_at": "2019-04-12T14:48:15.000Z",
+        "updated_at": "2019-05-06T12:12:36.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -56,7 +56,7 @@
       "followers_count": 2,
       "following_count": 0,
       "created_at": "2019-02-23T08:29:39.000Z",
-      "updated_at": "2019-04-12T14:48:15.000Z",
+      "updated_at": "2019-05-06T12:12:36.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -97,8 +97,8 @@
       "items_count": 8,
       "likes_count": 0,
       "watches_count": 1,
-      "content_updated_at": "2019-04-27T07:14:12.280Z",
-      "updated_at": "2019-04-27T07:14:12.000Z",
+      "content_updated_at": "2019-05-06T12:52:42.868Z",
+      "updated_at": "2019-05-06T12:52:42.000Z",
       "created_at": "2019-02-23T14:05:16.000Z",
       "namespace": "maclejean/lch",
       "user": {
@@ -116,7 +116,7 @@
         "followers_count": 2,
         "following_count": 0,
         "created_at": "2019-02-23T08:29:39.000Z",
-        "updated_at": "2019-04-12T14:48:15.000Z",
+        "updated_at": "2019-05-06T12:12:36.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -137,7 +137,7 @@
       "followers_count": 2,
       "following_count": 0,
       "created_at": "2019-02-23T08:29:39.000Z",
-      "updated_at": "2019-04-12T14:48:15.000Z",
+      "updated_at": "2019-05-06T12:12:36.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -178,8 +178,8 @@
       "items_count": 8,
       "likes_count": 0,
       "watches_count": 1,
-      "content_updated_at": "2019-04-27T07:14:12.280Z",
-      "updated_at": "2019-04-27T07:14:12.000Z",
+      "content_updated_at": "2019-05-06T12:52:42.868Z",
+      "updated_at": "2019-05-06T12:52:42.000Z",
       "created_at": "2019-02-23T14:05:16.000Z",
       "namespace": "maclejean/lch",
       "user": {
@@ -197,7 +197,7 @@
         "followers_count": 2,
         "following_count": 0,
         "created_at": "2019-02-23T08:29:39.000Z",
-        "updated_at": "2019-04-12T14:48:15.000Z",
+        "updated_at": "2019-05-06T12:12:36.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -218,7 +218,7 @@
       "followers_count": 2,
       "following_count": 0,
       "created_at": "2019-02-23T08:29:39.000Z",
-      "updated_at": "2019-04-12T14:48:15.000Z",
+      "updated_at": "2019-05-06T12:12:36.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -259,8 +259,8 @@
       "items_count": 8,
       "likes_count": 0,
       "watches_count": 1,
-      "content_updated_at": "2019-04-27T07:14:12.280Z",
-      "updated_at": "2019-04-27T07:14:12.000Z",
+      "content_updated_at": "2019-05-06T12:52:42.868Z",
+      "updated_at": "2019-05-06T12:52:42.000Z",
       "created_at": "2019-02-23T14:05:16.000Z",
       "namespace": "maclejean/lch",
       "user": {
@@ -278,7 +278,7 @@
         "followers_count": 2,
         "following_count": 0,
         "created_at": "2019-02-23T08:29:39.000Z",
-        "updated_at": "2019-04-12T14:48:15.000Z",
+        "updated_at": "2019-05-06T12:12:36.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -299,7 +299,7 @@
       "followers_count": 2,
       "following_count": 0,
       "created_at": "2019-02-23T08:29:39.000Z",
-      "updated_at": "2019-04-12T14:48:15.000Z",
+      "updated_at": "2019-05-06T12:12:36.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -326,7 +326,7 @@
   {
     "id": 1330060,
     "slug": "hkf2sl",
-    "title": "无标题",
+    "title": "Talkback的问题",
     "book_id": 223480,
     "book": {
       "id": 223480,
@@ -340,8 +340,8 @@
       "items_count": 8,
       "likes_count": 0,
       "watches_count": 1,
-      "content_updated_at": "2019-04-27T07:14:12.280Z",
-      "updated_at": "2019-04-27T07:14:12.000Z",
+      "content_updated_at": "2019-05-06T12:52:42.868Z",
+      "updated_at": "2019-05-06T12:52:42.000Z",
       "created_at": "2019-02-23T14:05:16.000Z",
       "namespace": "maclejean/lch",
       "user": {
@@ -359,7 +359,7 @@
         "followers_count": 2,
         "following_count": 0,
         "created_at": "2019-02-23T08:29:39.000Z",
-        "updated_at": "2019-04-12T14:48:15.000Z",
+        "updated_at": "2019-05-06T12:12:36.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -380,27 +380,27 @@
       "followers_count": 2,
       "following_count": 0,
       "created_at": "2019-02-23T08:29:39.000Z",
-      "updated_at": "2019-04-12T14:48:15.000Z",
+      "updated_at": "2019-05-06T12:12:36.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
-    "body": "",
+    "body": "![](https://cdn.nlark.com/yuque/0/2019/png/273716/1557145243063-7fd36cf7-9845-4680-afad-e9795ea0c34c.png#align=left&display=inline&height=42&originHeight=170&originWidth=553&status=done&width=138)<br />最近在做的一个hybrid项目，碰到一个talkback问题：webview上的评分控件在talkback模式下无法选中，<br />实现方式就是span标签加背景图，touch事件监听选中与取消选中。\n\n```javascript\n//代码仅做展示demo，无实际逻辑\nstar.ontouchstart = fn1\nstar.ontouchend = fn2;\n```\n[Accessible Rich Internet Applications ](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA)[**(ARIA)**]()[ 是能够让残障人士更加便利的访问 Web 内容和使用 Web 应用（特别是那些由 Ajax 和 JavaScript 开发的）的一套机制。]()<br />MDN 上有比较详尽的介绍，其实感觉一般的公司都碰不到这样的场景，也不会顾忌这些。但是既然碰到了，就mark一下。<br />介绍了很多适配的规则跟方法，`<span aria-label=\"button\" />`,这里talkback选中时，就会播报“button”。<br />那就有新的问题了，难道我还要根据语种设置不同的value吗？可以是可以，但是没必要。HTML讲究语义化，我直接把`span`换成`button`，试了一下，中文下说“按钮”，英文说“button”，正好，至于其他语种，因为是中文rom，其他小语种都没支持，至于国外rom，没试过。<br />选中播报的问题解决了，还有一个问题，就是talkback下，“星星”选中与取消选中不生效了。MMP，真的是不明所以，定位咯，“touchstart”，“touchend”事件全部加log，看下是什么原因。<br />未开启talkback，全部正常打印log，开启talkback，一个都不响应了。百度谷歌搜了个遍，当然英文的 我也不会看那么细，没养成习惯，反正结果就是没有结果。<br />那就开启各种试了，第一个想到的就是改成“click”事件，忽略300ms延时吧。结果一试就可以了。人品爆发。<br />反正后面还要各种改，冒泡改成捕获，捕获还要根据结果决定是否阻止继续捕获。\n\n```javascript\n//代码仅做展示demo，无实际逻辑\nstar.onclick = fn4;\n```\n\n总而言之感觉就是，talkback对“click”支持的是比较好的，touch事件，在webview的talkback下，简直被废了。先码一文，等待后续有新的发现再自己打自己脸,ORZ.\n",
     "body_draft": "",
-    "body_html": "",
-    "body_lake": "",
+    "body_html": "<p style=\"text-indent: 2em;\"><img src=\"https://cdn.nlark.com/yuque/0/2019/png/273716/1557145243063-7fd36cf7-9845-4680-afad-e9795ea0c34c.png#align=left&amp;display=inline&amp;height=42&amp;originHeight=170&amp;originWidth=553&amp;status=done&amp;width=138\" style=\"max-width: 600px; width: 138px;\" /></p><p style=\"text-indent: 2em;\">最近在做的一个hybrid项目，碰到一个talkback问题：webview上的评分控件在talkback模式下无法选中，</p><p>实现方式就是span标签加背景图，touch事件监听选中与取消选中。</p><p><br /></p><pre data-lang=\"javascript\"><code>//代码仅做展示demo，无实际逻辑\nstar.ontouchstart = fn1\nstar.ontouchend = fn2;</code></pre><p style=\"text-indent: 2em;\"><a href=\"https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA\" target=\"_blank\"><span class=\"lake-fontsize-12\" style=\"color: #333333;\">Accessible Rich Internet Applications </span></a><a href=\"\" target=\"_blank\"><strong>(ARIA)</strong></a><a href=\"\" target=\"_blank\"><span class=\"lake-fontsize-12\" style=\"color: #333333;\"> 是能够让残障人士更加便利的访问 Web 内容和使用 Web 应用（特别是那些由 Ajax 和 JavaScript 开发的）的一套机制。</span></a></p><p style=\"text-indent: 2em;\">MDN 上有比较详尽的介绍，其实感觉一般的公司都碰不到这样的场景，也不会顾忌这些。但是既然碰到了，就mark一下。</p><p style=\"text-indent: 2em;\">介绍了很多适配的规则跟方法，<code>&lt;span aria-label=&quot;button&quot; /&gt;</code>,这里talkback选中时，就会播报“button”。</p><p style=\"text-indent: 2em;\">那就有新的问题了，难道我还要根据语种设置不同的value吗？可以是可以，但是没必要。HTML讲究语义化，我直接把<code>span</code>换成<code>button</code>，试了一下，中文下说“按钮”，英文说“button”，正好，至于其他语种，因为是中文rom，其他小语种都没支持，至于国外rom，没试过。</p><p style=\"text-indent: 2em;\">选中播报的问题解决了，还有一个问题，就是talkback下，“星星”选中与取消选中不生效了。MMP，真的是不明所以，定位咯，“touchstart”，“touchend”事件全部加log，看下是什么原因。</p><p style=\"text-indent: 2em;\">未开启talkback，全部正常打印log，开启talkback，一个都不响应了。百度谷歌搜了个遍，当然英文的 我也不会看那么细，没养成习惯，反正结果就是没有结果。</p><p style=\"text-indent: 2em;\">那就开启各种试了，第一个想到的就是改成“click”事件，忽略300ms延时吧。结果一试就可以了。人品爆发。</p><p>反正后面还要各种改，冒泡改成捕获，捕获还要根据结果决定是否阻止继续捕获。</p><p><br /></p><pre data-lang=\"javascript\"><code>//代码仅做展示demo，无实际逻辑\nstar.onclick = fn4;</code></pre><p><br /></p><p style=\"text-indent: 2em;\">总而言之感觉就是，talkback对“click”支持的是比较好的，touch事件，在webview的talkback下，简直被废了。先码一文，等待后续有新的发现再自己打自己脸,ORZ.</p>",
+    "body_lake": "<!doctype lake><p style=\"text-indent: 2em;\"><card type=\"inline\" name=\"image\" value=\"data:%7B%22src%22%3A%22https%3A%2F%2Fcdn.nlark.com%2Fyuque%2F0%2F2019%2Fpng%2F273716%2F1557145243063-7fd36cf7-9845-4680-afad-e9795ea0c34c.png%22%2C%22originWidth%22%3A553%2C%22originHeight%22%3A170%2C%22display%22%3A%22inline%22%2C%22align%22%3A%22left%22%2C%22linkTarget%22%3A%22_blank%22%2C%22status%22%3A%22done%22%2C%22width%22%3A138%2C%22height%22%3A42%7D\"></card></p><p style=\"text-indent: 2em;\">最近在做的一个hybrid项目，碰到一个talkback问题：webview上的评分控件在talkback模式下无法选中，</p><p>实现方式就是span标签加背景图，touch事件监听选中与取消选中。</p><p><br /></p><card type=\"block\" name=\"codeblock\" value=\"data:%7B%22mode%22%3A%22javascript%22%2C%22code%22%3A%22%2F%2F%E4%BB%A3%E7%A0%81%E4%BB%85%E5%81%9A%E5%B1%95%E7%A4%BAdemo%EF%BC%8C%E6%97%A0%E5%AE%9E%E9%99%85%E9%80%BB%E8%BE%91%5Cnstar.ontouchstart%20%3D%20fn1%5Cnstar.ontouchend%20%3D%20fn2%3B%22%2C%22id%22%3A%2248Bqz%22%7D\"></card><p style=\"text-indent: 2em;\"><a href=\"https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA\" target=\"_blank\"><span class=\"lake-fontsize-12\" style=\"color: #333333;\">Accessible Rich Internet Applications </span></a><a href=\"\" target=\"_blank\"><strong>(ARIA)</strong></a><a href=\"\" target=\"_blank\"><span class=\"lake-fontsize-12\" style=\"color: #333333;\"> 是能够让残障人士更加便利的访问 Web 内容和使用 Web 应用（特别是那些由 Ajax 和 JavaScript 开发的）的一套机制。</span></a></p><p style=\"text-indent: 2em;\">MDN 上有比较详尽的介绍，其实感觉一般的公司都碰不到这样的场景，也不会顾忌这些。但是既然碰到了，就mark一下。</p><p style=\"text-indent: 2em;\">介绍了很多适配的规则跟方法，<code>&lt;span aria-label=&quot;button&quot; /&gt;</code>,这里talkback选中时，就会播报“button”。</p><p style=\"text-indent: 2em;\">那就有新的问题了，难道我还要根据语种设置不同的value吗？可以是可以，但是没必要。HTML讲究语义化，我直接把<code>span</code>换成<code>button</code>，试了一下，中文下说“按钮”，英文说“button”，正好，至于其他语种，因为是中文rom，其他小语种都没支持，至于国外rom，没试过。</p><p style=\"text-indent: 2em;\">选中播报的问题解决了，还有一个问题，就是talkback下，“星星”选中与取消选中不生效了。MMP，真的是不明所以，定位咯，“touchstart”，“touchend”事件全部加log，看下是什么原因。</p><p style=\"text-indent: 2em;\">未开启talkback，全部正常打印log，开启talkback，一个都不响应了。百度谷歌搜了个遍，当然英文的 我也不会看那么细，没养成习惯，反正结果就是没有结果。</p><p style=\"text-indent: 2em;\">那就开启各种试了，第一个想到的就是改成“click”事件，忽略300ms延时吧。结果一试就可以了。人品爆发。</p><p>反正后面还要各种改，冒泡改成捕获，捕获还要根据结果决定是否阻止继续捕获。</p><p><br /></p><card type=\"block\" name=\"codeblock\" value=\"data:%7B%22mode%22%3A%22javascript%22%2C%22code%22%3A%22%2F%2F%E4%BB%A3%E7%A0%81%E4%BB%85%E5%81%9A%E5%B1%95%E7%A4%BAdemo%EF%BC%8C%E6%97%A0%E5%AE%9E%E9%99%85%E9%80%BB%E8%BE%91%5Cnstar.onclick%20%3D%20fn4%3B%22%2C%22id%22%3A%22g0cNY%22%7D\"></card><p><br /></p><p style=\"text-indent: 2em;\">总而言之感觉就是，talkback对“click”支持的是比较好的，touch事件，在webview的talkback下，简直被废了。先码一文，等待后续有新的发现再自己打自己脸,ORZ.</p>",
     "public": 1,
-    "status": 0,
+    "status": 1,
     "likes_count": 0,
     "comments_count": 0,
-    "content_updated_at": "2019-03-05T13:49:29.000Z",
+    "content_updated_at": "2019-05-06T12:52:42.000Z",
     "deleted_at": null,
     "created_at": "2019-03-05T13:49:25.000Z",
-    "updated_at": "2019-03-05T13:49:29.000Z",
-    "published_at": null,
-    "first_published_at": null,
-    "word_count": 0,
+    "updated_at": "2019-05-06T12:52:42.000Z",
+    "published_at": "2019-05-06T12:52:42.000Z",
+    "first_published_at": "2019-05-06T12:52:42.000Z",
+    "word_count": 552,
     "cover": null,
-    "description": "",
+    "description": "最近在做的一个hybrid项目，碰到一个talkback问题：webview上的评分控件在talkback模式下无法选中，实现方式就是span标签加背景图，touch事件监听选中与取消选中。//代码仅做展示demo，无实际逻辑 star.ontouchstart = fn1 star.onto...",
     "custom_description": null,
     "_serializer": "v2.doc_detail"
   },
@@ -421,8 +421,8 @@
       "items_count": 8,
       "likes_count": 0,
       "watches_count": 1,
-      "content_updated_at": "2019-04-27T07:14:12.280Z",
-      "updated_at": "2019-04-27T07:14:12.000Z",
+      "content_updated_at": "2019-05-06T12:52:42.868Z",
+      "updated_at": "2019-05-06T12:52:42.000Z",
       "created_at": "2019-02-23T14:05:16.000Z",
       "namespace": "maclejean/lch",
       "user": {
@@ -440,7 +440,7 @@
         "followers_count": 2,
         "following_count": 0,
         "created_at": "2019-02-23T08:29:39.000Z",
-        "updated_at": "2019-04-12T14:48:15.000Z",
+        "updated_at": "2019-05-06T12:12:36.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -461,7 +461,7 @@
       "followers_count": 2,
       "following_count": 0,
       "created_at": "2019-02-23T08:29:39.000Z",
-      "updated_at": "2019-04-12T14:48:15.000Z",
+      "updated_at": "2019-05-06T12:12:36.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -502,8 +502,8 @@
       "items_count": 8,
       "likes_count": 0,
       "watches_count": 1,
-      "content_updated_at": "2019-04-27T07:14:12.280Z",
-      "updated_at": "2019-04-27T07:14:12.000Z",
+      "content_updated_at": "2019-05-06T12:52:42.868Z",
+      "updated_at": "2019-05-06T12:52:42.000Z",
       "created_at": "2019-02-23T14:05:16.000Z",
       "namespace": "maclejean/lch",
       "user": {
@@ -521,7 +521,7 @@
         "followers_count": 2,
         "following_count": 0,
         "created_at": "2019-02-23T08:29:39.000Z",
-        "updated_at": "2019-04-12T14:48:15.000Z",
+        "updated_at": "2019-05-06T12:12:36.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -542,7 +542,7 @@
       "followers_count": 2,
       "following_count": 0,
       "created_at": "2019-02-23T08:29:39.000Z",
-      "updated_at": "2019-04-12T14:48:15.000Z",
+      "updated_at": "2019-05-06T12:12:36.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -583,8 +583,8 @@
       "items_count": 8,
       "likes_count": 0,
       "watches_count": 1,
-      "content_updated_at": "2019-04-27T07:14:12.280Z",
-      "updated_at": "2019-04-27T07:14:12.000Z",
+      "content_updated_at": "2019-05-06T12:52:42.868Z",
+      "updated_at": "2019-05-06T12:52:42.000Z",
       "created_at": "2019-02-23T14:05:16.000Z",
       "namespace": "maclejean/lch",
       "user": {
@@ -602,7 +602,7 @@
         "followers_count": 2,
         "following_count": 0,
         "created_at": "2019-02-23T08:29:39.000Z",
-        "updated_at": "2019-04-12T14:48:15.000Z",
+        "updated_at": "2019-05-06T12:12:36.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -623,7 +623,7 @@
       "followers_count": 2,
       "following_count": 0,
       "created_at": "2019-02-23T08:29:39.000Z",
-      "updated_at": "2019-04-12T14:48:15.000Z",
+      "updated_at": "2019-05-06T12:12:36.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
