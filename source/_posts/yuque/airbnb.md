@@ -1860,12 +1860,12 @@ function example() {
 
 
 - [15.2](#comparison--if) 条件语句，例如 `if` 语句使用 `ToBoolean` 的抽象方法来计算表达式的结果，并始终遵循以下简单的规则：
-  - **Objects**true**
-  - **Undefined**false**
-  - **Null**false**
-  - **Booleans**布尔值的取值**
-  - **Numbers**+0, -0, or NaN**false**true**
-  - **Strings** 的取值为: 如果是一个空字符串 `''` 值为 **false**true**
+  - **Objects** 的取值为： **true**
+  - **Undefined** 的取值为： **false**
+  - **Null** 的取值为： **false**
+  - **Booleans** 的取值为： **布尔值的取值**
+  - **Numbers** 的取值为：如果为 **+0, -0, or NaN** 值为 **false** 否则为 **true**
+  - **Strings** 的取值为: 如果是一个空字符串 `''` 值为 **false** 否则为 **true**
 ```javascript
 if ([0] && []) {
   // true
