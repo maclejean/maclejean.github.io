@@ -86,21 +86,18 @@
 
 
 
-<meta name="description" content="准备工作 https://travis-ci.org/，用github注册，然后选择一个git项目 准备Github Personal Access Token。 ruby for windows gem install travis开始配置   github生成私钥    加密上面的私钥到travis  项目根目录内打开命令，运行下面的命令 1travis encrypt KEY=value">
+<meta name="description" content="写在前面今天碰到一个诉求，网页性能太慢，需要优化首屏加载速度。网页由10个视频资源，加10个图片资源构成，所有资源在同一时间加载（真不是我写的，我不接这个锅）。立马想到的方案是，延迟加载，通过判断元素中心点的位置，来赋予src属性。同时要保证，视频超出视窗一半及暂停，反之则自动开始播放。毫无疑问，监听scroll事件来做了，scroll搭配setTimeout也还行，节流，功能也能实现。但是我觉">
 <meta name="keywords" content="Code,FE,HTML,CSS,JS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="travis-ci加持">
-<meta property="og:url" content="https://maclejean.github.io/2019/03/05/yuque/wlw0e9/index.html">
+<meta property="og:title" content="监听scroll，判断是否在视口？">
+<meta property="og:url" content="https://maclejean.github.io/2019/05/31/yuque/vlc4c0/index.html">
 <meta property="og:site_name" content="Lite Code House">
-<meta property="og:description" content="准备工作 https://travis-ci.org/，用github注册，然后选择一个git项目 准备Github Personal Access Token。 ruby for windows gem install travis开始配置   github生成私钥    加密上面的私钥到travis  项目根目录内打开命令，运行下面的命令 1travis encrypt KEY=value">
+<meta property="og:description" content="写在前面今天碰到一个诉求，网页性能太慢，需要优化首屏加载速度。网页由10个视频资源，加10个图片资源构成，所有资源在同一时间加载（真不是我写的，我不接这个锅）。立马想到的方案是，延迟加载，通过判断元素中心点的位置，来赋予src属性。同时要保证，视频超出视窗一半及暂停，反之则自动开始播放。毫无疑问，监听scroll事件来做了，scroll搭配setTimeout也还行，节流，功能也能实现。但是我觉">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/273716/1551874707042-9156b10c-7ce8-45e3-ae9b-e0ca99041c8d.png#align=left&display=inline&height=250&name=%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190306201812.png&originHeight=380&originWidth=1063&size=29426&status=done&width=699">
-<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/273716/1551876657962-8a298ca5-18ac-486e-a9d0-6bf105f0676c.png#align=left&display=inline&height=258&name=%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190306205038.png&originHeight=541&originWidth=1566&size=33251&status=done&width=746">
 <meta property="og:updated_time" content="2019-05-31T13:56:30.125Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="travis-ci加持">
-<meta name="twitter:description" content="准备工作 https://travis-ci.org/，用github注册，然后选择一个git项目 准备Github Personal Access Token。 ruby for windows gem install travis开始配置   github生成私钥    加密上面的私钥到travis  项目根目录内打开命令，运行下面的命令 1travis encrypt KEY=value">
-<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/273716/1551874707042-9156b10c-7ce8-45e3-ae9b-e0ca99041c8d.png#align=left&display=inline&height=250&name=%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190306201812.png&originHeight=380&originWidth=1063&size=29426&status=done&width=699">
+<meta name="twitter:title" content="监听scroll，判断是否在视口？">
+<meta name="twitter:description" content="写在前面今天碰到一个诉求，网页性能太慢，需要优化首屏加载速度。网页由10个视频资源，加10个图片资源构成，所有资源在同一时间加载（真不是我写的，我不接这个锅）。立马想到的方案是，延迟加载，通过判断元素中心点的位置，来赋予src属性。同时要保证，视频超出视窗一半及暂停，反之则自动开始播放。毫无疑问，监听scroll事件来做了，scroll搭配setTimeout也还行，节流，功能也能实现。但是我觉">
 
 
 
@@ -130,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="https://maclejean.github.io/2019/03/05/yuque/wlw0e9/">
+  <link rel="canonical" href="https://maclejean.github.io/2019/05/31/yuque/vlc4c0/">
 
 
 
 
 
-  <title>travis-ci加持 | Lite Code House</title>
+  <title>监听scroll，判断是否在视口？ | Lite Code House</title>
   
 
 
@@ -301,7 +298,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://maclejean.github.io/2019/03/05/yuque/wlw0e9/">
+    <link itemprop="mainEntityOfPage" href="https://maclejean.github.io/2019/05/31/yuque/vlc4c0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Macle Jean">
@@ -318,7 +315,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">travis-ci加持</h2>
+          <h2 class="post-title" itemprop="name headline">监听scroll，判断是否在视口？</h2>
         
 
         <div class="post-meta">
@@ -330,8 +327,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-05T21:49:33+08:00">
-                2019-03-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-31T21:05:33+08:00">
+                2019-05-31
               </time>
             
 
@@ -349,8 +346,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/03/05/yuque/wlw0e9/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/05/yuque/wlw0e9/" itemprop="commentCount"></span>
+                <a href="/2019/05/31/yuque/vlc4c0/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/31/yuque/vlc4c0/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -358,7 +355,7 @@
 
           
           
-             <span id="/2019/03/05/yuque/wlw0e9/" class="leancloud_visitors" data-flag-title="travis-ci加持">
+             <span id="/2019/05/31/yuque/vlc4c0/" class="leancloud_visitors" data-flag-title="监听scroll，判断是否在视口？">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -389,31 +386,16 @@
       
 
       
-        <p><a name="88210852"></a></p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
-<li><a href="https://travis-ci.org/" target="_blank" rel="noopener">https://travis-ci.org/</a>，用github注册，然后选择一个git项目</li>
-<li>准备Github Personal Access Token。</li>
-<li><a href="https://rubyinstaller.org/downloads/" target="_blank" rel="noopener">ruby for windows</a></li>
-<li>gem install travis<br><a name="7af603bb"></a><h2 id="开始配置"><a href="#开始配置" class="headerlink" title="开始配置"></a>开始配置</h2></li>
+        <p><a name="Jc7eO"></a></p>
+<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p>今天碰到一个诉求，网页性能太慢，需要优化首屏加载速度。网页由10个视频资源，加10个图片资源构成，所有资源在同一时间加载（真不是我写的，我不接这个锅）。<br>立马想到的方案是，延迟加载，通过判断元素中心点的位置，来赋予src属性。同时要保证，视频超出视窗一半及暂停，反之则自动开始播放。毫无疑问，监听scroll事件来做了，scroll搭配setTimeout也还行，节流，功能也能实现。但是我觉得可以更好，一顿骚气搜索以后找到一个api<a href="https://developers.google.com/web/updates/2016/04/intersectionobserver" target="_blank" rel="noopener"> </a><a href="https://developers.google.com/web/updates/2016/04/intersectionobserver" target="_blank" rel="noopener"><code>Intersection observer</code></a>，简直了，百分百契合我的诉求。<br><a name="hRRzW"></a></p>
+<h3 id="调试过程"><a href="#调试过程" class="headerlink" title="调试过程"></a>调试过程</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        html,body&#123;</span></span><br><span class="line"><span class="undefined">            width: 100%;</span></span><br><span class="line"><span class="undefined">            height: 100%;</span></span><br><span class="line"><span class="undefined">            margin: 0;</span></span><br><span class="line"><span class="undefined">            padding: 0;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        .box&#123;</span></span><br><span class="line"><span class="undefined">            width: 100%;</span></span><br><span class="line"><span class="undefined">            height: 100%;</span></span><br><span class="line"><span class="undefined">            display: flex;</span></span><br><span class="line"><span class="undefined">            flex-direction: column;</span></span><br><span class="line"><span class="undefined">            align-content: center;</span></span><br><span class="line"><span class="undefined">            align-items: center;</span></span><br><span class="line"><span class="undefined">            justify-content: center;</span></span><br><span class="line"><span class="undefined">            font-size: 50px;</span></span><br><span class="line"><span class="undefined">            border: 1px solid red;</span></span><br><span class="line"><span class="undefined">            box-sizing: border-box;</span></span><br><span class="line"><span class="undefined">            margin: 10px 0;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">        </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span> <span class="attr">id</span>=<span class="string">"box1"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span> <span class="attr">id</span>=<span class="string">"box2"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span> <span class="attr">id</span>=<span class="string">"box3"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span> <span class="attr">id</span>=<span class="string">"box4"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span> <span class="attr">id</span>=<span class="string">"box5"</span>&gt;</span>5<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> option =&#123;</span><br><span class="line">  root:<span class="literal">null</span>, <span class="comment">// 你要监听的taget的父元素，不填为window</span></span><br><span class="line">  threshold:<span class="number">0.5</span> <span class="comment">// 可以理解为一个阈值，0-1，默认是0，就是只要露头就触发callback，1是完全显示才触发callback</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> callback =<span class="function"><span class="keyword">function</span>(<span class="params">entries,observer</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// 这里的参数比较多,这里只需要isIntersecting</span></span><br><span class="line">  <span class="comment">//entires是一个数组，包含了每个监听对象的IntersectionObserverEntry</span></span><br><span class="line">  <span class="comment">//我们要用的是entry.isIntersecting </span></span><br><span class="line">  <span class="comment">//返回一个布尔值, 如果目标元素与交叉区域观察者对象(intersection observer) 的根相交，</span></span><br><span class="line">  <span class="comment">//则返回 true .如果返回 true, 则 IntersectionObserverEntry 描述了变换到交叉时的状态; </span></span><br><span class="line">  <span class="comment">//如果返回 false, 那么可以由此判断,变换是从交叉状态到非交叉状态.</span></span><br><span class="line">  entries.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">entry</span>)</span>&#123;</span><br><span class="line">  	<span class="keyword">if</span>(entry.isIntersecting) &#123;</span><br><span class="line">    	<span class="comment">// 露头了 搞事情，播放视频，src赋值什么的</span></span><br><span class="line">    &#125; <span class="keyword">else</span>&#123;</span><br><span class="line">    	<span class="comment">//开溜了 ，暂停视频，节约资源</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> target1 = <span class="built_in">document</span>.querySelector(<span class="string">'#box1'</span>);</span><br><span class="line"><span class="keyword">var</span> target2 = <span class="built_in">document</span>.querySelector(<span class="string">'#box2'</span>);</span><br><span class="line"><span class="keyword">var</span> target3 = <span class="built_in">document</span>.querySelector(<span class="string">'#box3'</span>);</span><br><span class="line"><span class="keyword">var</span> target4 = <span class="built_in">document</span>.querySelector(<span class="string">'#box4'</span>);</span><br><span class="line"><span class="keyword">var</span> target5 = <span class="built_in">document</span>.querySelector(<span class="string">'#box5'</span>);</span><br><span class="line"><span class="keyword">var</span> observer = <span class="keyword">new</span> IntersectionObserver(callback,option);</span><br><span class="line">observer.observe(target1);</span><br><span class="line">observer.observe(target2);</span><br><span class="line">observer.observe(target3);</span><br><span class="line">observer.observe(target4);</span><br><span class="line">observer.observe(target5);</span><br></pre></td></tr></table></figure>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserverEntry" target="_blank" rel="noopener"><strong>IntersectionObserverEntry</strong></a><strong>的详细解释可以点击链接去到MDN查看</strong><br><a name="tkzjj"></a></p>
+<h4 id="IntersectionObserver其他方法"><a href="#IntersectionObserver其他方法" class="headerlink" title="IntersectionObserver其他方法"></a>IntersectionObserver其他方法</h4><ul>
+<li>disconnect 使<code>IntersectionObserver</code>对象停止监听工作</li>
+<li>takeRecords 返回所有观察目标的<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserverEntry" target="_blank" rel="noopener"><code>IntersectionObserverEntry</code></a>对象数组</li>
+<li>unobserver 使<code>IntersectionObserver</code>停止监听特定目标元素。<br><a name="Gvpq9"></a><h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3>以往的方法都是监听scroll再结合<code>[getBoundingClientRect](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect)</code>，这个新的api可以省去很多东西，性能方面，肯定是比scroll监听要好，如果实现了你的目的，没有后续的，可以直接停止监听。</li>
 </ul>
-<ol>
-<li>github生成私钥</li>
-</ol>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/png/273716/1551874707042-9156b10c-7ce8-45e3-ae9b-e0ca99041c8d.png#align=left&amp;display=inline&amp;height=250&amp;name=%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190306201812.png&amp;originHeight=380&amp;originWidth=1063&amp;size=29426&amp;status=done&amp;width=699" alt="微信图片_20190306201812.png"></p>
-<ol start="2">
-<li>加密上面的私钥到travis</li>
-</ol>
-<p>项目根目录内打开命令，运行下面的命令<br></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">travis encrypt KEY=value      //KEY 为自定义变量名，value为1步骤中的token的值</span><br></pre></td></tr></table></figure>
-<pre><code>会输出下列信息
-</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">secure：一串很长的字符串...... //下面会用到</span><br></pre></td></tr></table></figure>
-<p>将生成的字符串复制，配置到travis-ci.org<br><img src="https://cdn.nlark.com/yuque/0/2019/png/273716/1551876657962-8a298ca5-18ac-486e-a9d0-6bf105f0676c.png#align=left&amp;display=inline&amp;height=258&amp;name=%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190306205038.png&amp;originHeight=541&amp;originWidth=1566&amp;size=33251&amp;status=done&amp;width=746" alt="微信图片_20190306205038.png"></p>
-<ol start="4">
-<li><code>.travis.yml</code>其他配置</li>
-</ol>
-<p>下面是我的文件配置，直接拷贝修改即可</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">language:</span> <span class="string">node_js</span>  <span class="comment">#设置语言</span></span><br><span class="line"></span><br><span class="line"><span class="attr">node_js:</span> <span class="string">stable</span>  <span class="comment">#设置相应的版本</span></span><br><span class="line"></span><br><span class="line"><span class="attr">cache:</span></span><br><span class="line"><span class="attr">    apt:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    directories:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">node_modules</span> <span class="comment"># 缓存不经常更改的内容</span></span><br><span class="line"></span><br><span class="line"><span class="attr">before_install:</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">export</span> <span class="string">TZ='Asia/Shanghai'</span> <span class="comment"># 更改时区</span></span><br><span class="line"></span><br><span class="line"><span class="attr">install:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">npm</span> <span class="string">install</span> <span class="string">hexo</span> <span class="comment">#安装hexo及插件</span></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">hexo</span> <span class="string">clean</span>  <span class="comment">#清除</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">hexo</span> <span class="string">g</span>  <span class="comment">#生成</span></span><br><span class="line"></span><br><span class="line"><span class="attr">after_script:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">git</span> <span class="string">clone</span> <span class="attr">https://$&#123;GH_REF&#125;</span> <span class="string">.deploy_git</span>  <span class="comment"># GH_REF是最下面配置的仓库地址</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">cd</span> <span class="string">.deploy_git</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">git</span> <span class="string">checkout</span> <span class="string">master</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">cd</span> <span class="string">../</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">mv</span> <span class="string">.deploy_git/.git/</span> <span class="string">./public/</span>   <span class="comment"># 这一步之前的操作是为了保留master分支的提交记录，不然每次git init的话只有1条commit</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">cd</span> <span class="string">./public</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">git</span> <span class="string">config</span> <span class="string">user.name</span> <span class="string">"username"</span>  <span class="comment">#修改name</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">git</span> <span class="string">config</span> <span class="string">user.email</span> <span class="string">"username@gmail.com"</span>  <span class="comment">#修改email</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">git</span> <span class="string">add</span> <span class="string">.</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">git</span> <span class="string">commit</span> <span class="bullet">-m</span> <span class="string">"Travis CI Auto Builder at `date +"</span><span class="string">%Y-%m-%d</span> <span class="string">%H:%M"`"</span>  <span class="comment"># 提交记录包含时间 跟上面更改时区配合</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">git</span> <span class="string">push</span> <span class="bullet">--force</span> <span class="bullet">--quiet</span> <span class="string">"https://$&#123;Travis_Token&#125;@$&#123;GH_REF&#125;"</span> <span class="attr">master:master</span>  <span class="comment">#Travis_Token是在Travis中配置环境变量的名称</span></span><br><span class="line"></span><br><span class="line"><span class="attr">branches:</span></span><br><span class="line"><span class="attr">  only:</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">hexo_config</span>  <span class="comment">#只监测hexo_config分支，按需配置 hexo_config是我hexo项目配置的分支，master是我静态博客输出的分支</span></span><br><span class="line"></span><br><span class="line"><span class="attr">env:</span></span><br><span class="line"><span class="attr"> global:</span></span><br><span class="line"><span class="attr">   - GH_REF:</span> <span class="string">github.com/username/username.github.io.git</span>  <span class="comment">#设置GH_REF，设置你自己的就行</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># configure notifications (email, IRC, campfire etc)</span></span><br><span class="line"><span class="comment"># please update this section to your needs!</span></span><br><span class="line"><span class="comment"># https://docs.travis-ci.com/user/notifications/</span></span><br><span class="line"><span class="attr">notifications:</span></span><br><span class="line"><span class="attr">  email:</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">username@gmail.com</span></span><br><span class="line"><span class="attr">  on_success:</span> <span class="string">change</span></span><br><span class="line"><span class="attr">  on_failure:</span> <span class="string">always</span></span><br></pre></td></tr></table></figure>
-<p>更多配置介绍查看<a href="https://docs.travis-ci.com/" target="_blank" rel="noopener">https://docs.travis-ci.com/</a><br>下一篇讲一下，next主题</p>
 
       
     </div>
@@ -438,8 +420,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/05/yuque/hkf2sl/" rel="next" title="Talkback的问题">
-                <i class="fa fa-chevron-left"></i> Talkback的问题
+              <a href="/2019/03/22/yuque/yahrlw/" rel="next" title="Next主题">
+                <i class="fa fa-chevron-left"></i> Next主题
               </a>
             
           </div>
@@ -447,10 +429,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/05/yuque/airbnb/" rel="prev" title="Airbnb JavaScript 代码规范">
-                Airbnb JavaScript 代码规范 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -569,7 +547,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始配置"><span class="nav-number">2.</span> <span class="nav-text">开始配置</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调试过程"><span class="nav-number">2.</span> <span class="nav-text">调试过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#IntersectionObserver其他方法"><span class="nav-number">2.1.</span> <span class="nav-text">IntersectionObserver其他方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小结"><span class="nav-number">3.</span> <span class="nav-text">小结</span></a></li></ol></div>
             
 
           </div>
