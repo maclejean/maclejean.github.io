@@ -1,6 +1,6 @@
 
 ---
-title: orientaton: 0, 不一定是竖屏
+title: orientaton= 0, 不一定是竖屏
 date: 2019-05-30 20:59:41 +0800
 tags: []
 categories: 
