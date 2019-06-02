@@ -27,7 +27,7 @@
   "scripts":{
     "update":"yuque-hexo clean && yuque-hexo sync",
     "add":"git add .",
-    "commit":"git commit",
+    "commit":"git commit -m 更新",
     "remote":"git push origin hexo_config",
     "build":"npm run update && npm run add &&npm run commit && npm run remote",
     "dev":"npm run update && hexo clean && hexo s --debug"
